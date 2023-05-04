@@ -24,7 +24,9 @@ export const signup = (data) => {
     },
     body: JSON.stringify(data),
   }).then((response) => {
-    if (response.status < 200 || response.status >= 300) {
+    if (response.status === 409) {
+      throw new Error("User already exists");
+    } else if (response.status < 200 || response.status >= 300) {
       throw Error("Fail to sign up");
     }
   });

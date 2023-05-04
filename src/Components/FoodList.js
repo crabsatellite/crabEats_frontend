@@ -42,6 +42,10 @@ const FoodList = () => {
     getRestaurants()
       .then((data) => {
         setRestaurants(data);
+        // Set the first restaurant as the current selected restaurant
+        if (data.length > 0) {
+          setCurRest(data[0].id);
+        }
       })
       .catch((err) => {
         message.error(err.message);

@@ -29,10 +29,10 @@ class SignupForm extends React.Component {
         message.success(`Successfully signed up`);
       })
       .catch((err) => {
+        console.log(err);
         message.error(err.message);
       });
   };
-
   render = () => {
     return (
       <>
@@ -64,7 +64,11 @@ class SignupForm extends React.Component {
                 { required: true, message: "Please input your password!" },
               ]}
             >
-              <Input prefix={<LockOutlined />} placeholder="Password" />
+              <Input
+                prefix={<LockOutlined />}
+                type="password"
+                placeholder="Password"
+              />
             </Form.Item>
             <Form.Item
               name="firstName"

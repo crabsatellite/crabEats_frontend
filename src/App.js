@@ -1,44 +1,62 @@
 import { Layout, Typography } from "antd";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FoodList from "./components/FoodList";
 import LoginForm from "./components/LoginForm";
 import MyCart from "./components/MyCart";
 import SignupForm from "./components/SignupForm";
+import ImageCarousel from "./components/ImageCarousel";
+import "./App.css";
 
 const { Header, Content } = Layout;
 const { Title } = Typography;
 
 function App() {
-  const [authed, setAuthed] = useState(false);
+  const [authed, setAuthed] = useState(() => {
+    const storedAuth = localStorage.getItem("authed");
+    return storedAuth === "true";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("authed", authed);
+  }, [authed]);
 
   return (
     <Layout style={{ height: "100vh" }}>
-      <Header>
-        <div
-          className="header"
-          style={{ display: "flex", justifyContent: "space-between" }}
+      <Header className="custom-header">
+        <Title
+          level={2}
+          className="crab-eats-title"
+          style={{
+            lineHeight: "inherit",
+            marginBottom: 0,
+            font: "italic bold 40px/50px Georgia, serif",
+          }}
+          onClick={() => {
+            setAuthed(false);
+          }}
         >
-          <Title
-            level={2}
-            style={{ color: "white", lineHeight: "inherit", marginBottom: 0 }}
-          >
-            Crab Eats
-          </Title>
-          <div>{authed ? <MyCart /> : <SignupForm />}</div>
-        </div>
+          Crab Eats
+        </Title>
+        <div>{authed ? <MyCart /> : <SignupForm />}</div>
       </Header>
-      <Content
-        style={{
-          padding: "50px",
-          maxHeight: "calc(100% - 64px)",
-          overflowY: "auto",
-        }}
-      >
-        {authed ? (
-          <FoodList />
-        ) : (
-          <LoginForm onSuccess={() => setAuthed(true)} />
+
+      <Content>
+        {!authed && (
+          <div className="site-background-container">
+            <ImageCarousel className="image-carousel" />
+          </div>
         )}
+        <div className="site-content-container">
+          {authed ? (
+            <div className="food-list-container">
+              <FoodList />
+            </div>
+          ) : (
+            <div className="login-container">
+              <LoginForm onSuccess={() => setAuthed(true)} />
+            </div>
+          )}
+        </div>
       </Content>
     </Layout>
   );

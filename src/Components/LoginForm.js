@@ -41,17 +41,40 @@ class LoginForm extends React.Component {
           name="username"
           rules={[{ required: true, message: "Please input your Username!" }]}
         >
-          <Input prefix={<UserOutlined />} placeholder="Username" />
+          <Input
+            prefix={<UserOutlined />}
+            placeholder="Username"
+            style={{ fontSize: "16px", height: "40px", borderRadius: "5px" }}
+          />
         </Form.Item>
         <Form.Item
           name="password"
           rules={[{ required: true, message: "Please input your Password!" }]}
         >
-          <Input.Password prefix={<LockOutlined />} placeholder="Password" />
+          <Input.Password
+            prefix={<LockOutlined />}
+            placeholder="Password"
+            style={{ fontSize: "16px", height: "40px", borderRadius: "5px" }}
+          />
         </Form.Item>
 
         <Form.Item>
-          <Button type="primary" htmlType="submit" loading={this.state.loading}>
+          <Button
+            type="primary"
+            htmlType="submit"
+            loading={this.state.loading}
+            style={{
+              width: "95%",
+              color: "Snow",
+              fontSize: "16px",
+              height: "40px",
+              borderRadius: "50px",
+              border: "PowderBlue",
+              backgroundColor: "Turquoise",
+              position: "relative",
+              left: "2.5%",
+            }}
+          >
             Login
           </Button>
         </Form.Item>

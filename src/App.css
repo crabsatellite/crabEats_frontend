@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+.custom-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.custom-header .crab-eats-title {
+  color: white;
+}
+
+.crab-eats-title:hover {
+  color: rgb(233, 231, 231);
+  cursor: pointer;
+}
+
+.food-list-container {
+  margin-top: 110px;
+  position: static;
+  width: auto;
+  height: auto;
+  display: block;
+  z-index: auto;
+}
+
+.login-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.site-background-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
