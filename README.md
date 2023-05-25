@@ -1,97 +1,61 @@
-# Crab Eats (Online Food Ordering System)
+# Crab Eats: Online Food Ordering System (Frontend)
 
-This repository contains the **frontend** codebase for a robust Online Food Ordering system. (Backend is [here](https://github.com/crabsatellite/crabEats_backend)) 
+Welcome to the frontend repository of Crab Eats! This project is a comprehensive online food ordering system. The backend code can be found [here](https://github.com/crabsatellite/crabEats_backend).
 
-The backend is built using Spring and Hibernate, and the frontend utilizes ReactJS and Ant Design.
+## Tech Stack
 
----
-
-## Backend
-
-The backend of the system is built with Java, utilizing the Spring and Hibernate frameworks.
-
-### Features:
-
-- **REST API**: The system is built around a REST API implemented via Spring MVC. The API provides various endpoints including user registration, menu searching, food ordering, and checkout functionalities.
-
-- **Data Storage and Access**: Hibernate is used for data storage and operations. It allows us to perform complex operations on stored data such as retrieving the menu and various restaurant details with ease.
-
-- **Security**: Spring Security is utilized to ensure authentication and authorization of users. This secures the application from potential malicious attacks by making sure only authenticated users have access to their respective accounts.
-
-- **Loose Coupling**: The Spring Framework's core technologies have been used to loosely couple all the components in the application. This results in a modular design, enhancing maintainability and scalability of the system.
-
----
+The frontend is developed using ReactJS and Ant Design, while the backend is built with Java, Spring, and Hibernate.
 
 ## Frontend
 
-The frontend of the application is built with ReactJS and uses the Ant Design UI library for an interactive and user-friendly interface.
+The frontend of Crab Eats is designed to be interactive and user-friendly:
 
-### Features:
+- **Interactive UI**: Built using ReactJS, the UI is dynamic and responsive.
 
-- **Interactive UI**: The UI is built using ReactJS which allows for a dynamic and responsive user interface.
+- **Shopping Cart**: Users can add menu items to their cart and place orders with ease.
 
-- **Shopping Cart**: The system provides an intuitive shopping cart feature, allowing users to add menu items to their cart and place orders.
+- **User-Friendly Design**: The application uses Ant Design to provide a clean, minimalist, and easy-to-navigate interface.
 
-- **User-Friendly Design**: The application uses Ant Design to provide a clean, minimalist and easy-to-navigate interface.
+## Backend
 
----
+The backend of Crab Eats boasts several features:
 
-## Backend Setup (Java)
+- **REST API**: Implemented via Spring MVC, the API provides endpoints for user registration, menu searching, food ordering, and checkout functionalities.
 
-1. **Clone the Repository**
-   - On GitHub, navigate to the main page of the repository.
-   - Click on 'Code' button in green.
-   - In the 'Clone >> HTTPS' section, copy the clone URL for the repository.
-   - Open your command line or Terminal application and navigate to the directory where you wish to clone the repository.
-   - Type `git clone`, and then paste the URL you copied earlier. It will look like this: `https://github.com/crabsatellite/crabEats_backend.git`
-   - Press Enter to clone the repository to your local machine.
+- **Data Storage and Access**: Hibernate is used for data storage and operations, enabling complex operations such as retrieving the menu and various restaurant details.
 
-2. **Setup Environment Variables**
-   - Navigate to the directory where the project resides.
-   - You should have a `.env` file or a `application.properties` file where you will need to add your database credentials such as the database name, username, and password. For Spring Boot applications, this is typically found in `src/main/resources/application.properties`.
-   - Also, add other necessary configurations such as your server port.
+- **Security**: Spring Security is used for user authentication and authorization, ensuring that only authenticated users have access to their respective accounts.
 
-3. **Run the Backend Server**
-   - Open a terminal in the project's root directory.
-   - You can usually start the application using `./mvnw spring-boot:run`..
+- **Loose Coupling**: The Spring Framework's core technologies are used to loosely couple all the components in the application, resulting in a modular design that enhances maintainability and scalability.
 
-Please ensure you have the Java Development Kit (JDK) installed to run the server.
+## Getting Started
 
-## Frontend Setup (React.js)
+### Frontend Setup (React.js)
 
-1. **Clone the Repository**
-   - Repeat the cloning steps from the Backend setup.
+1. **Clone the Repository**: Clone this repository to your local machine using the command `git clone https://github.com/crabsatellite/crabEats_frontend.git`.
 
-2. **Setup Environment Variables**
-   - Navigate to the directory where the project resides.
-   - You should have a `.env` file where you will need to add the API endpoints that your application will use to communicate with the backend server.
-   - Other typical environment variables include the port number that the React app will run on.
+2. **Setup Environment Variables**: Navigate to the directory where the project resides. Add the API endpoints and other necessary configurations to your .env file.
 
-3. **Run the Frontend Server**
-   - Open a terminal in the project's root directory.
-   - Install the necessary dependencies by running `npm install`.
-   - After installation, you can start the application using `npm start`.
+3. **Run the Frontend Server**: Open a terminal in the project's root directory. Install the necessary dependencies by running `npm install`, then start the application using `npm start`.
 
-Please ensure you have Node.js and npm installed to set up and run the project.
+### Backend Setup (Java)
 
-After you've set up both the backend and frontend servers, your application should now be running both locally on your machine.
+1. **Clone the Repository**: Clone the backend repository to your local machine using the command `git clone https://github.com/crabsatellite/crabEats_backend.git`.
 
----
+2. **Setup Environment Variables**: Navigate to the directory where the project resides. Add your database credentials and other necessary configurations to your .env file or application.properties file.
+
+3. **Run the Backend Server**: Open a terminal in the project's root directory and start the application using `./mvnw spring-boot:run`.
+
+## Contributions
 
 This project is still under development. Contributions are very welcome!
 
----
-
 ## License
 
-This project is licensed under the MIT License. See `LICENSE` for more information.
-
----
+This project is licensed under the MIT License. See LICENSE for more information.
 
 ## Contact
 
-Feel free to get in touch if you have any questions. 
+Feel free to get in touch if you have any questions.
 
----
-
-**Enjoy ordering your meals with Crab Eats!**
+Enjoy ordering your meals with Crab Eats!
