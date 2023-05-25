@@ -1,6 +1,6 @@
 # Crab Eats (Online Food Ordering System)
 
-This repository contains the **frontend** codebase for a robust Online Food Ordering system. (Backend is here) 
+This repository contains the **frontend** codebase for a robust Online Food Ordering system. (Backend is [here](https://github.com/crabsatellite/crabEats_backend)) 
 
 The backend is built using Spring and Hibernate, and the frontend utilizes ReactJS and Ant Design.
 
