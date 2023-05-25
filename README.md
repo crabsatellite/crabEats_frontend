@@ -1,72 +1,97 @@
-This is the frontend of Crab Eats, a online order system app.
+# Crab Eats (Online Food Ordering System)
 
-# Getting Started with Create React App
+This repository contains the **frontend** codebase for a robust Online Food Ordering system. (Backend is here) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The backend is built using Spring and Hibernate, and the frontend utilizes ReactJS and Ant Design.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Backend
 
-### `npm start`
+The backend of the system is built with Java, utilizing the Spring and Hibernate frameworks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **REST API**: The system is built around a REST API implemented via Spring MVC. The API provides various endpoints including user registration, menu searching, food ordering, and checkout functionalities.
 
-### `npm test`
+- **Data Storage and Access**: Hibernate is used for data storage and operations. It allows us to perform complex operations on stored data such as retrieving the menu and various restaurant details with ease.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Security**: Spring Security is utilized to ensure authentication and authorization of users. This secures the application from potential malicious attacks by making sure only authenticated users have access to their respective accounts.
 
-### `npm run build`
+- **Loose Coupling**: The Spring Framework's core technologies have been used to loosely couple all the components in the application. This results in a modular design, enhancing maintainability and scalability of the system.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The frontend of the application is built with ReactJS and uses the Ant Design UI library for an interactive and user-friendly interface.
 
-### `npm run eject`
+### Features:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Interactive UI**: The UI is built using ReactJS which allows for a dynamic and responsive user interface.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Shopping Cart**: The system provides an intuitive shopping cart feature, allowing users to add menu items to their cart and place orders.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **User-Friendly Design**: The application uses Ant Design to provide a clean, minimalist and easy-to-navigate interface.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Backend Setup (Java)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the Repository**
+   - On GitHub, navigate to the main page of the repository.
+   - Click on 'Code' button in green.
+   - In the 'Clone >> HTTPS' section, copy the clone URL for the repository.
+   - Open your command line or Terminal application and navigate to the directory where you wish to clone the repository.
+   - Type `git clone`, and then paste the URL you copied earlier. It will look like this: `https://github.com/crabsatellite/crabEats_backend.git`
+   - Press Enter to clone the repository to your local machine.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Setup Environment Variables**
+   - Navigate to the directory where the project resides.
+   - You should have a `.env` file or a `application.properties` file where you will need to add your database credentials such as the database name, username, and password. For Spring Boot applications, this is typically found in `src/main/resources/application.properties`.
+   - Also, add other necessary configurations such as your server port.
 
-### Code Splitting
+3. **Run the Backend Server**
+   - Open a terminal in the project's root directory.
+   - You can usually start the application using `./mvnw spring-boot:run`..
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Please ensure you have the Java Development Kit (JDK) installed to run the server.
 
-### Analyzing the Bundle Size
+## Frontend Setup (React.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Clone the Repository**
+   - Repeat the cloning steps from the Backend setup.
 
-### Making a Progressive Web App
+2. **Setup Environment Variables**
+   - Navigate to the directory where the project resides.
+   - You should have a `.env` file where you will need to add the API endpoints that your application will use to communicate with the backend server.
+   - Other typical environment variables include the port number that the React app will run on.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. **Run the Frontend Server**
+   - Open a terminal in the project's root directory.
+   - Install the necessary dependencies by running `npm install`.
+   - After installation, you can start the application using `npm start`.
 
-### Advanced Configuration
+Please ensure you have Node.js and npm installed to set up and run the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+After you've set up both the backend and frontend servers, your application should now be running both locally on your machine.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is still under development. Contributions are very welcome!
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## Contact
+
+Feel free to get in touch if you have any questions. 
+
+---
+
+**Enjoy ordering your meals with Crab Eats!**
