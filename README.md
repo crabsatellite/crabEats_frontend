@@ -1,3 +1,5 @@
+This is the frontend of Crab Eats, a online order system app.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
