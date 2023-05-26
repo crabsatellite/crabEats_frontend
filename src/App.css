@@ -37,6 +37,43 @@
   }
 }
 
+.crab-eats-title {
+  font: italic bold 40px/50px Georgia, serif;
+  transition: all 0.3s;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .crab-eats-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .crab-eats-title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .crab-eats-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .crab-eats-title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
 .custom-header {
   position: fixed;
   top: 0;
@@ -46,8 +83,8 @@
   background-color: #282c34;
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
   z-index: 100;
@@ -55,6 +92,8 @@
 
 .custom-header .crab-eats-title {
   color: white;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .crab-eats-title:hover {
@@ -81,6 +120,10 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 .site-background-container {
