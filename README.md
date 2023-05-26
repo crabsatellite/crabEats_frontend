@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Crab Eats: Online Food Ordering System (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend repository of Crab Eats! This project is a comprehensive online food ordering system. The backend code can be found [here](https://github.com/crabsatellite/crabEats_backend).
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+The frontend is developed using ReactJS and Ant Design, while the backend is built with Java, Spring, and Hibernate.
 
-### `npm start`
+## Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The frontend of Crab Eats is designed to be interactive and user-friendly:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Interactive UI**: Built using ReactJS, the UI is dynamic and responsive.
 
-### `npm test`
+- **Shopping Cart**: Users can add menu items to their cart and place orders with ease.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **User-Friendly Design**: The application uses Ant Design to provide a clean, minimalist, and easy-to-navigate interface.
 
-### `npm run build`
+## Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The backend of Crab Eats boasts several features:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **REST API**: Implemented via Spring MVC, the API provides endpoints for user registration, menu searching, food ordering, and checkout functionalities.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Data Storage and Access**: Hibernate is used for data storage and operations, enabling complex operations such as retrieving the menu and various restaurant details.
 
-### `npm run eject`
+- **Security**: Spring Security is used for user authentication and authorization, ensuring that only authenticated users have access to their respective accounts.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Loose Coupling**: The Spring Framework's core technologies are used to loosely couple all the components in the application, resulting in a modular design that enhances maintainability and scalability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend Setup (React.js)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the Repository**: Clone this repository to your local machine using the command `git clone https://github.com/crabsatellite/crabEats_frontend.git`.
 
-## Learn More
+2. **Setup Environment Variables**: Navigate to the directory where the project resides. Add the API endpoints and other necessary configurations to your .env file.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the Frontend Server**: Open a terminal in the project's root directory. Install the necessary dependencies by running `npm install`, then start the application using `npm start`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend Setup (Java)
 
-### Code Splitting
+1. **Clone the Repository**: Clone the backend repository to your local machine using the command `git clone https://github.com/crabsatellite/crabEats_backend.git`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Setup Environment Variables**: Navigate to the directory where the project resides. Add your database credentials and other necessary configurations to your .env file or application.properties file.
 
-### Analyzing the Bundle Size
+3. **Run the Backend Server**: Open a terminal in the project's root directory and start the application using `./mvnw spring-boot:run`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributions
 
-### Making a Progressive Web App
+This project is still under development. Contributions are very welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License. See LICENSE for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact
 
-### Deployment
+Feel free to get in touch if you have any questions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy ordering your meals with Crab Eats!
